@@ -58,7 +58,7 @@ footer {
 
 header {
     text-align: center;
-    width: 100%;
+    width: 100vw; /* 100% em relação ao viewport, é diferente quando colocado o valor percentual que considera em relação ao objeto pai! */
     position: fixed;
     top: 0;
     left: 0;
@@ -90,5 +90,11 @@ ul#cabecalho li {
 ul#cabecalho li a {
     text-decoration: none;
     color: gray;
+    
 }
 
+ul#cabecalho li a:hover { 
+    color: rgb(185,82,67);
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #FF0000;
+}
